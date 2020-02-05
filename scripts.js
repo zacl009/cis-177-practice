@@ -19,3 +19,17 @@ const me = {
 me.age = 23;
 console.log(me.pets.cat);
 console.log(me.pet.cat); // ! undefined.cat
+
+// Global variables vs. Object keys
+const x = 23;
+const name = "fake";
+
+const me = {
+  name: "oweinois"
+};
+
+// Reference the GLOBAL VARIABLE
+console.log(name);
+
+// Reference the key 'name; inside of the OBJECT me.
+console.log(me.name);
