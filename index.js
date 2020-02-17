@@ -1,12 +1,20 @@
-const x = 3;
-const name = "hello";
+console.log(49 === 49);
+// true primitives are compared by value
 
-// TODO: Check if x is ODD AND if it's less than 10.
-if (x % 2 === 1 && x < 10) {
-  console.log("x is odd because it has a remainder of 1.");
-}
+const a = 49;
+const b = 49;
 
-// TODO: Check if x is ODD OR if it's less than 10.
-if (x % 2 === 1 || x < 10) {
-  console.log("x is odd because it has a remainder of 1.");
-}
+console.log(a === b);
+
+const x = {
+  name: "Zac"
+};
+
+const y = {
+  name: "Zac"
+};
+//compared by reference
+//false because objects are compared by reference
+console.log(x === y);
+
+console.log({ a: 42 } === { a: 42 });
