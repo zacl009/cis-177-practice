@@ -1,20 +1,22 @@
-console.log(49 === 49);
-// true primitives are compared by value
+// PASS by VALUE
+let x = 3;
 
-const a = 49;
-const b = 49;
+// PRIMITIVES CANNOT MUTATE.
+// '3' that was used with 'x' previously is completely thrown out and replaced with y
+x = 4;
+let y = x;
 
-console.log(a === b);
+console.log(y);
 
-const x = {
+// PASS BY REFERENCE
+const a = {
   name: "Zac"
 };
 
-const y = {
-  name: "Zac"
-};
-//compared by reference
-//false because objects are compared by reference
-console.log(x === y);
+// b will point to the same memory address as a.
+// What happens to 1 will affect the other.
+const b = a;
 
-console.log({ a: 42 } === { a: 42 });
+a.name = "alkdsjf";
+
+console.log(b.name);
