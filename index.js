@@ -1,8 +1,15 @@
-// TODO: Log the numbers from 1 to 10
-let x = 1;
+/**
+ * TODO: Use a 'while' to log the numbers from 1 to 100.
+ * However, only log the odd numbers.
+ * HINT: Use an 'if' inside the wihle and use:
+ * i % 2 === 1 to determine if its odd.
+ */
 
-while (x <= 10) {
-  console.log(x);
-  // Always make sure that there is an exit condition.
-  x += 1; // x = x + 1;
+let i = 0;
+
+while (i <= 100) {
+  if (i % 2 === 1) {
+    console.log(i);
+  }
+  i += 1;
 }
